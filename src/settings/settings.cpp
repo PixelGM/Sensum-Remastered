@@ -155,6 +155,8 @@ namespace settings
 				Option::Load(root["misc.viewmodel_fov"], misc::viewmodel_fov, 68);
 				Option::Load(root["misc.deathmatch"], misc::deathmatch);
 				//Option::Load(root["misc.radar"], misc::radar);
+				Option::Load(root["misc.bhop"], misc::bhop);
+				Option::Load(root["misc.auto_strafe"], misc::auto_strafe);
 				Option::Load(root["misc.debug_fov"], misc::debug_fov);
 				Option::Load(root["misc.rcs_cross"], visuals::rcs_cross);
 				Option::Load(root["misc.rcs_cross_mode"], visuals::rcs_cross_mode);
@@ -317,6 +319,8 @@ namespace settings
 				config["misc.viewmodel_fov"] = misc::viewmodel_fov;
 				config["misc.deathmatch"] = misc::deathmatch;
 				//config["misc.radar"] = misc::radar;
+				config["misc.no_flash"] = misc::bhop;
+				config["misc.bhop"] = misc::auto_strafe;
 				config["misc.debug_fov"] = misc::debug_fov;
 				config["misc.rcs_cross"] = visuals::rcs_cross;
 				config["misc.rcs_cross_mode"] = visuals::rcs_cross_mode;
